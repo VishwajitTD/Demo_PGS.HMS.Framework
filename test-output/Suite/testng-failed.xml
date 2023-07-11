@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="pgh.hms.generic.genericUtility.ListenerImplementation"/>
-    <listener class-name="pgh.hms.generic.genericUtility.ITransform"/>
-  </listeners>
-  <test thread-count="5" parallel="classes" name="Test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="pgs.hms.testScripts.ReportsPageTest">
         <methods>
-          <include name="loginToApplicationasAsDoctor"/>
           <include name="connectToDB"/>
           <include name="loginToApplicationAsAdmin"/>
+          <include name="loginToApplicationasAsDoctor"/>
           <include name="closeBrowser"/>
           <include name="closeDB"/>
           <include name="logoutToApplication"/>
@@ -20,6 +16,19 @@
           <include name="loginToApplicationasAsPatient"/>
         </methods>
       </class> <!-- pgs.hms.testScripts.ReportsPageTest -->
+      <class name="pgs.hms.testScripts.AddingDoctorTest">
+        <methods>
+          <include name="loginToApplicationasAsDoctor"/>
+          <include name="loginToApplicationAsAdmin"/>
+          <include name="connectToDB"/>
+          <include name="closeBrowser"/>
+          <include name="closeDB"/>
+          <include name="addingDoctorsAndSearchPatientsTest"/>
+          <include name="setUpBrowser"/>
+          <include name="logoutToApplication"/>
+          <include name="loginToApplicationasAsPatient"/>
+        </methods>
+      </class> <!-- pgs.hms.testScripts.AddingDoctorTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
