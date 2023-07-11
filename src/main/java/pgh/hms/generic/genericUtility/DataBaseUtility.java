@@ -18,6 +18,7 @@ public class DataBaseUtility {
 	String url;
 	String username;
 	String password;
+	
     
 	 public DataBaseUtility(){
 			try {
@@ -77,7 +78,7 @@ public class DataBaseUtility {
 	 * @return
 	 * @throws Throwable
 	 */
-	public int execyteUpdate(String query) {
+	public int executeUpdate(String query) {
 		
 			int result = 0;
 			try {
