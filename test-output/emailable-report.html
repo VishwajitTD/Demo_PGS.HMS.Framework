@@ -9,30 +9,135 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">3</td><td class="num">0</td><td class="num attn">3</td><td class="num">0</td><td class="num">40,296</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num attn">8</td><td class="num">0</td><td class="num">0</td><td class="num">1,827</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="3">pgs.hms.testScripts.ReportsPageTest</td><td><a href="#m0">reportsTest</a></td><td rowspan="3">1688732044910</td><td rowspan="3">1697</td></tr><tr class="retriedeven"><td><a href="#m1">reportsTest</a></td></tr><tr class="retriedeven"><td><a href="#m2">reportsTest</a></td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">pgs.hms.testScripts.ManagePatientTestUpdated</td><td><a href="#m3">ManagPatientHistoryTest</a></td><td rowspan="2">1688732045798</td><td rowspan="2">3924</td></tr><tr class="passedeven"><td><a href="#m4">ManagPatientHistoryTest</a></td></tr><tr class="passedodd"><td rowspan="1">pgs.hms.testScripts.PatientTest</td><td><a href="#m5">integrationBetweenDoctorAndPateintTest</a></td><td rowspan="1">1688732038859</td><td rowspan="1">6067</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">pgs.hms.testScripts.AddingDoctorTest</td><td><a href="#m0">setUpBrowser</a></td><td rowspan="1">1689066631266</td><td rowspan="1">518</td></tr><tr class="failedodd"><td rowspan="1">pgs.hms.testScripts.ReportsPageTest</td><td><a href="#m1">setUpBrowser</a></td><td rowspan="1">1689066632786</td><td rowspan="1">276</td></tr><tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="14">pgs.hms.testScripts.AddingDoctorTest</td><td><a href="#m2">loginToApplicationAsAdmin</a></td><td rowspan="7">1689066632776</td><td rowspan="7">0</td></tr><tr class="skippedeven"><td><a href="#m3">loginToApplicationAsAdmin</a></td></tr><tr class="skippedeven"><td><a href="#m4">loginToApplicationAsAdmin</a></td></tr><tr class="skippedeven"><td><a href="#m5">loginToApplicationAsAdmin</a></td></tr><tr class="skippedeven"><td><a href="#m6">loginToApplicationAsAdmin</a></td></tr><tr class="skippedeven"><td><a href="#m7">loginToApplicationAsAdmin</a></td></tr><tr class="skippedeven"><td><a href="#m8">loginToApplicationAsAdmin</a></td></tr><tr class="skippedeven"><td><a href="#m9">logoutToApplication</a></td><td rowspan="7">1689066632762</td><td rowspan="7">0</td></tr><tr class="skippedeven"><td><a href="#m10">logoutToApplication</a></td></tr><tr class="skippedeven"><td><a href="#m11">logoutToApplication</a></td></tr><tr class="skippedeven"><td><a href="#m12">logoutToApplication</a></td></tr><tr class="skippedeven"><td><a href="#m13">logoutToApplication</a></td></tr><tr class="skippedeven"><td><a href="#m14">logoutToApplication</a></td></tr><tr class="skippedeven"><td><a href="#m15">logoutToApplication</a></td></tr><tr class="skippedodd"><td rowspan="2">pgs.hms.testScripts.ReportsPageTest</td><td><a href="#m16">loginToApplicationAsAdmin</a></td><td rowspan="1">1689066633064</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m17">logoutToApplication</a></td><td rowspan="1">1689066633067</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="7">pgs.hms.testScripts.AddingDoctorTest</td><td><a href="#m18">addingDoctorsAndSearchPatientsTest</a></td><td rowspan="7">1689066632741</td><td rowspan="7">0</td></tr><tr class="skippedeven"><td><a href="#m19">addingDoctorsAndSearchPatientsTest</a></td></tr><tr class="skippedeven"><td><a href="#m20">addingDoctorsAndSearchPatientsTest</a></td></tr><tr class="skippedeven"><td><a href="#m21">addingDoctorsAndSearchPatientsTest</a></td></tr><tr class="skippedeven"><td><a href="#m22">addingDoctorsAndSearchPatientsTest</a></td></tr><tr class="skippedeven"><td><a href="#m23">addingDoctorsAndSearchPatientsTest</a></td></tr><tr class="skippedeven"><td><a href="#m24">addingDoctorsAndSearchPatientsTest</a></td></tr><tr class="skippedodd"><td rowspan="1">pgs.hms.testScripts.ReportsPageTest</td><td><a href="#m25">reportsTest</a></td><td rowspan="1">1689066633066</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">pgs.hms.testScripts.ReportsPageTest#reportsTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
-	at pgs.hms.testScripts.ReportsPageTest.reportsTest(ReportsPageTest.java:52)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 14 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">pgs.hms.testScripts.ReportsPageTest#reportsTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
-	at pgs.hms.testScripts.ReportsPageTest.reportsTest(ReportsPageTest.java:52)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 14 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">pgs.hms.testScripts.ReportsPageTest#reportsTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
-	at pgs.hms.testScripts.ReportsPageTest.reportsTest(ReportsPageTest.java:52)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 14 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">pgs.hms.testScripts.ManagePatientTestUpdated#ManagPatientHistoryTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>140</td><td>70</td><td>67</td><td>99</td><td>Durex</td></tr><tr><th colspan="5">Messages</th></tr><tr><td colspan="5"><div class="messages">Logged in as Doctor.....<br/>Patient is create  ---> PASS<br/>Loggin out as Doctor</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">pgs.hms.testScripts.ManagePatientTestUpdated#ManagPatientHistoryTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>120</td><td>90</td><td>76</td><td>101</td><td>Dolo 65</td></tr><tr><th colspan="5">Messages</th></tr><tr><td colspan="5"><div class="messages">Logged in as Doctor.....<br/>Patient is create  ---> PASS<br/>Loggin out as Doctor</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">pgs.hms.testScripts.PatientTest#integrationBetweenDoctorAndPateintTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Logging Out as Patient....<br/>Log in Doctors....<br/>Patient is create  ---> PASS<br/>Logging Out as Doctor....</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">pgs.hms.testScripts.AddingDoctorTest#setUpBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The path to the driver executable Unable to locate the geckodriver executable; for more information on how to install drivers, see https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:33)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at pgh.hms.generic.genericUtility.BaseClass.setUpBrowser(BaseClass.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">pgs.hms.testScripts.ReportsPageTest#setUpBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The path to the driver executable Unable to locate the geckodriver executable; for more information on how to install drivers, see https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:33)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at pgh.hms.generic.genericUtility.BaseClass.setUpBrowser(BaseClass.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">pgs.hms.testScripts.AddingDoctorTest#loginToApplicationAsAdmin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">pgs.hms.testScripts.AddingDoctorTest#loginToApplicationAsAdmin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">pgs.hms.testScripts.AddingDoctorTest#loginToApplicationAsAdmin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">pgs.hms.testScripts.AddingDoctorTest#loginToApplicationAsAdmin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">pgs.hms.testScripts.AddingDoctorTest#loginToApplicationAsAdmin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">pgs.hms.testScripts.AddingDoctorTest#loginToApplicationAsAdmin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">pgs.hms.testScripts.AddingDoctorTest#loginToApplicationAsAdmin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">pgs.hms.testScripts.AddingDoctorTest#logoutToApplication</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">pgs.hms.testScripts.AddingDoctorTest#logoutToApplication</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">pgs.hms.testScripts.AddingDoctorTest#logoutToApplication</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">pgs.hms.testScripts.AddingDoctorTest#logoutToApplication</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">pgs.hms.testScripts.AddingDoctorTest#logoutToApplication</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">pgs.hms.testScripts.AddingDoctorTest#logoutToApplication</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">pgs.hms.testScripts.AddingDoctorTest#logoutToApplication</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">pgs.hms.testScripts.ReportsPageTest#loginToApplicationAsAdmin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">pgs.hms.testScripts.ReportsPageTest#logoutToApplication</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">pgs.hms.testScripts.AddingDoctorTest#addingDoctorsAndSearchPatientsTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>hh</td><td>Bengaluru</td><td>600</td><td>9877777777</td><td>hh1@gmail.com</td><td>1231</td><td>1231</td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.IllegalStateException: The path to the driver executable Unable to locate the geckodriver executable; for more information on how to install drivers, see https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:33)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at pgh.hms.generic.genericUtility.BaseClass.setUpBrowser(BaseClass.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">pgs.hms.testScripts.AddingDoctorTest#addingDoctorsAndSearchPatientsTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>nn</td><td>Mumbai</td><td>500</td><td>9877777776</td><td>nn1@gmail.com</td><td>3211</td><td>3211</td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.IllegalStateException: The path to the driver executable Unable to locate the geckodriver executable; for more information on how to install drivers, see https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:33)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at pgh.hms.generic.genericUtility.BaseClass.setUpBrowser(BaseClass.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">pgs.hms.testScripts.AddingDoctorTest#addingDoctorsAndSearchPatientsTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>ll</td><td>Bengaluru</td><td>600</td><td>9877777774</td><td>ll1@gmail.com</td><td>1231</td><td>1231</td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.IllegalStateException: The path to the driver executable Unable to locate the geckodriver executable; for more information on how to install drivers, see https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:33)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at pgh.hms.generic.genericUtility.BaseClass.setUpBrowser(BaseClass.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">pgs.hms.testScripts.AddingDoctorTest#addingDoctorsAndSearchPatientsTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>mm</td><td>Bengaluru</td><td>600</td><td>9877777775</td><td>mm1@gmail.com</td><td>1231</td><td>1231</td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.IllegalStateException: The path to the driver executable Unable to locate the geckodriver executable; for more information on how to install drivers, see https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:33)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at pgh.hms.generic.genericUtility.BaseClass.setUpBrowser(BaseClass.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m22">pgs.hms.testScripts.AddingDoctorTest#addingDoctorsAndSearchPatientsTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>ii</td><td>Mumbai</td><td>500</td><td>9877777771</td><td>ii1@gmail.com</td><td>3211</td><td>3211</td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.IllegalStateException: The path to the driver executable Unable to locate the geckodriver executable; for more information on how to install drivers, see https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:33)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at pgh.hms.generic.genericUtility.BaseClass.setUpBrowser(BaseClass.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m23">pgs.hms.testScripts.AddingDoctorTest#addingDoctorsAndSearchPatientsTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>kk</td><td>Mumbai</td><td>500</td><td>9877777773</td><td>k1k@gmail.com</td><td>3211</td><td>3211</td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.IllegalStateException: The path to the driver executable Unable to locate the geckodriver executable; for more information on how to install drivers, see https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:33)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at pgh.hms.generic.genericUtility.BaseClass.setUpBrowser(BaseClass.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m24">pgs.hms.testScripts.AddingDoctorTest#addingDoctorsAndSearchPatientsTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>jj</td><td>Bengaluru</td><td>600</td><td>9877777772</td><td>jj1@gmail.com</td><td>1231</td><td>1231</td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.IllegalStateException: The path to the driver executable Unable to locate the geckodriver executable; for more information on how to install drivers, see https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:33)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at pgh.hms.generic.genericUtility.BaseClass.setUpBrowser(BaseClass.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m25">pgs.hms.testScripts.ReportsPageTest#reportsTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The path to the driver executable Unable to locate the geckodriver executable; for more information on how to install drivers, see https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:33)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at pgh.hms.generic.genericUtility.BaseClass.setUpBrowser(BaseClass.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
