@@ -14,7 +14,7 @@ import pgh.hms.generic.genericUtility.BaseClass;
 
 @Listeners(pgh.hms.generic.genericUtility.ListenerImplementation.class)
 public class AddingDoctorTest extends BaseClass {
-	//WelCome
+	
 	// Admin Log in
 	@Test(retryAnalyzer = pgh.hms.generic.genericUtility.RetryImplementation.class,groups = "regressionTest", dataProvider = "addDoctorData")
 	public void addingDoctorsAndSearchPatientsTest(String doctor_Name, String clinic_Address, String doctor_Fees,
