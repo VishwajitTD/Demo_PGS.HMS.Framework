@@ -21,7 +21,7 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class ExcelUtility {
 	/**
-	 * 
+	 *
 	 * @param filePath
 	 * @param sheetName
 	 * @param rowNum
@@ -292,7 +292,7 @@ public class ExcelUtility {
 		// Initialize variables
 		Object[][] data = null; // Initialize the 2D array to store the data
 		FileInputStream fis = null; // Input stream to read the Excel file
-
+		
 		try {
 			// Open the Excel file
 			fis = new FileInputStream(excelPath);

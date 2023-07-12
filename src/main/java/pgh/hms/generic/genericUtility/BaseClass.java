@@ -46,30 +46,38 @@ public class BaseClass {
 	 * Open the Browser
 	 */
 	@BeforeClass(groups = {"smokeTest","regressionTest"})
-	@Parameters("browser")
+//	@Parameters("browser")
 	public void setUpBrowser(/*String browser*/) {
-	    String browser = fLib.getDataFromProperties(envtFilePath, "browser");
-
+	String browser = fLib.getDataFromProperties(envtFilePath, "browser");
+	//  String browser=System.getProperty("BROWSER");
+	  //String url=System.getProperty("URL");
+	    
 	    switch (browser.toLowerCase()) {
 	        case "chrome":
-	            driver = new ChromeDriver();
-	            listenerDriver = driver;
-	            Reporter.log("Chrome is connected", true);
-	            break;
-	        case "firefox":
-	            driver = new FirefoxDriver();
-	            listenerDriver = driver;
-	            Reporter.log("Firefox is connected", true);
-	            break;
-	        default:
-	            driver = new ChromeDriver();
-	            listenerDriver = driver;
-	            Reporter.log("Default Chrome is connected", true);
-	    }
+				driver = new ChromeDriver();
+				listenerDriver = driver;
+				Reporter.log("Chrome is connected", true);
+				break;
+			case "firefox":
+				driver = new FirefoxDriver();
+				listenerDriver = driver;
+				Reporter.log("Firefox is connected", true);
+				break;
+			default:
+				driver = new ChromeDriver();
+				listenerDriver = driver;
+				Reporter.log("Default Chrome is connected", true);
+			}
 
-	    driver.manage().window().maximize();
-	    wLib.waitForElementInDOM(driver);
-	}
+			driver.manage().window().maximize();
+			wLib.waitForElementInDOM(driver);
+
+			String url = fLib.getDataFromProperties(envtFilePath, "url");
+			
+			// "Open the browser and enter the test URL"
+
+			driver.get(url);
+		}
 
 	
 /**
@@ -78,16 +86,9 @@ public class BaseClass {
 	@BeforeMethod(groups = {"smokeTest","regressionTest"},enabled = false)
 	public void loginToApplicationasAsPatient() {
 		
-		excelPath = fLib.getFilePathFromPropertiesFile("testDataFilePath");
-		
-		String url = fLib.getDataFromProperties(envtFilePath, "url");
+	
 		String patUsername = fLib.getDataFromProperties(envtFilePath, "patUsername");
-		String patPassword = fLib.getDataFromProperties(envtFilePath, "patPassword");		
-		// "Open the browser and enter the test URL"
-		
-		
-		
-		driver.get(url);
+		String patPassword = fLib.getDataFromProperties(envtFilePath, "patPassword");
 		// click for admin module
 		HMS_WelcomPage welcom = new HMS_WelcomPage(driver);
 		welcom.patientLogin();

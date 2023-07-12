@@ -11,8 +11,8 @@
           <include name="closeBrowser"/>
           <include name="closeDB"/>
           <include name="addingDoctorsAndSearchPatientsTest"/>
-          <include name="logoutToApplication"/>
           <include name="setUpBrowser"/>
+          <include name="logoutToApplication"/>
           <include name="loginToApplicationasAsPatient"/>
         </methods>
       </class> <!-- pgs.hms.testScripts.AddingDoctorTest -->
