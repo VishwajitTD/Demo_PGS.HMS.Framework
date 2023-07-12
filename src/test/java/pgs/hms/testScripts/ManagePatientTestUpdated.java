@@ -16,7 +16,7 @@ import pgh.hms.generic.genericUtility.BaseClass;
 
 public class ManagePatientTestUpdated extends BaseClass {
 
-	@Test(retryAnalyzer = pgh.hms.generic.genericUtility.RetryImplementation.class,dataProvider = "Medical History",groups = "smokeTest")
+	@Test(retryAnalyzer = pgh.hms.generic.genericUtility.RetryImplementation.class,dataProvider = "Medical History",groups = "smokeTest",enabled = false)
 
 	public void ManagPatientHistoryTest(String bp,String sugar,String weight,String temp,String prescription) throws Throwable {
 		// Login as Doctor

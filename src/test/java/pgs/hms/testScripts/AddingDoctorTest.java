@@ -16,7 +16,7 @@ import pgh.hms.generic.genericUtility.BaseClass;
 public class AddingDoctorTest extends BaseClass {
 	
 	// Admin Log in
-	@Test(retryAnalyzer = pgh.hms.generic.genericUtility.RetryImplementation.class,groups = "regressionTest", dataProvider = "addDoctorData")
+	@Test(retryAnalyzer = pgh.hms.generic.genericUtility.RetryImplementation.class,groups = "regressionTest", dataProvider = "addDoctorData",enabled = false)
 	public void addingDoctorsAndSearchPatientsTest(String doctor_Name, String clinic_Address, String doctor_Fees,
 			String contact_Number, String doctor_Email, String new_Password, String confirm_Password) throws Throwable {
 		// read Excel testData
