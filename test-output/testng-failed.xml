@@ -10,7 +10,7 @@
           <include name="connectToDB"/>
           <include name="closeBrowser"/>
           <include name="closeDB"/>
-          <include name="addingDoctorsAndSearchPatientsTest"/>
+          <include name="addingDoctorsAndSearchPatientsTest" invocation-numbers="0 1 2 3 4 5 6"/>
           <include name="logoutToApplication"/>
           <include name="setUpBrowser"/>
           <include name="loginToApplicationasAsPatient"/>
