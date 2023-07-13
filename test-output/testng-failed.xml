@@ -6,13 +6,13 @@
       <class name="pgs.hms.test.ReportsPageTest">
         <methods>
           <include name="loginToApplicationAsAdmin"/>
-          <include name="connectToDB"/>
           <include name="loginToApplicationasAsDoctor"/>
+          <include name="connectToDB"/>
           <include name="closeBrowser"/>
           <include name="closeDB"/>
           <include name="reportsTest"/>
-          <include name="logoutToApplication"/>
           <include name="setUpBrowser"/>
+          <include name="logoutToApplication"/>
           <include name="loginToApplicationasAsPatient"/>
         </methods>
       </class> <!-- pgs.hms.test.ReportsPageTest -->
