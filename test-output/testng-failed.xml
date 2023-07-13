@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="pgs.hms.testScripts.PatientTest">
+      <class name="pgs.hms.testScripts.ReportsPageTest">
         <methods>
           <include name="loginToApplicationAsAdmin"/>
-          <include name="loginToApplicationasAsDoctor"/>
           <include name="connectToDB"/>
+          <include name="loginToApplicationasAsDoctor"/>
           <include name="closeBrowser"/>
           <include name="closeDB"/>
-          <include name="integrationBetweenDoctorAndPateintTest"/>
-          <include name="setUpBrowser"/>
           <include name="logoutToApplication"/>
+          <include name="setUpBrowser"/>
+          <include name="reportsTest"/>
           <include name="loginToApplicationasAsPatient"/>
         </methods>
-      </class> <!-- pgs.hms.testScripts.PatientTest -->
+      </class> <!-- pgs.hms.testScripts.ReportsPageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
