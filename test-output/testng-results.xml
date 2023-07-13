@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
     <line>
       <![CDATA[Data base is connected]]>
@@ -8,22 +8,13 @@
       <![CDATA[Chrome is connected]]>
     </line>
     <line>
-      <![CDATA[Logged in as Admin.....]]>
-    </line>
-    <line>
-      <![CDATA[Patient is create  ---> PASS]]>
-    </line>
-    <line>
-      <![CDATA[Loggiing out ....]]>
-    </line>
-    <line>
       <![CDATA[Browser is closing...]]>
     </line>
     <line>
       <![CDATA[Data base is closing...]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-07-13T16:19:29 IST" name="Default suite" finished-at="2023-07-13T16:19:33 IST" duration-ms="3912">
+  <suite started-at="2023-07-13T17:20:24 IST" name="Default suite" finished-at="2023-07-13T17:20:30 IST" duration-ms="6295">
     <groups>
       <group name="regressionTest">
         <method signature="ReportsPageTest.reportsTest()[pri:0, instance:pgs.hms.test.ReportsPageTest@4681c175]" name="reportsTest" class="pgs.hms.test.ReportsPageTest"/>
@@ -32,51 +23,168 @@
         <method signature="ReportsPageTest.reportsTest()[pri:0, instance:pgs.hms.test.ReportsPageTest@4681c175]" name="reportsTest" class="pgs.hms.test.ReportsPageTest"/>
       </group> <!-- smokeTest -->
     </groups>
-    <test started-at="2023-07-13T16:19:29 IST" name="Default test" finished-at="2023-07-13T16:19:33 IST" duration-ms="3912">
+    <test started-at="2023-07-13T17:20:24 IST" name="Default test" finished-at="2023-07-13T17:20:30 IST" duration-ms="6295">
       <class name="pgs.hms.test.ReportsPageTest">
-        <test-method is-config="true" signature="connectToDB()[pri:0, instance:pgs.hms.test.ReportsPageTest@4681c175]" started-at="2023-07-13T16:19:28 IST" name="connectToDB" finished-at="2023-07-13T16:19:29 IST" duration-ms="231" status="PASS">
+        <test-method is-config="true" signature="connectToDB()[pri:0, instance:pgs.hms.test.ReportsPageTest@4681c175]" started-at="2023-07-13T17:20:24 IST" name="connectToDB" finished-at="2023-07-13T17:20:24 IST" duration-ms="205" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Data base is connected]]>
             </line>
           </reporter-output>
         </test-method> <!-- connectToDB -->
-        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:pgs.hms.test.ReportsPageTest@4681c175]" started-at="2023-07-13T16:19:29 IST" name="setUpBrowser" finished-at="2023-07-13T16:19:31 IST" duration-ms="2171" status="PASS">
+        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:pgs.hms.test.ReportsPageTest@4681c175]" started-at="2023-07-13T17:20:24 IST" name="setUpBrowser" finished-at="2023-07-13T17:20:30 IST" duration-ms="6132" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8c588e6e3059202279d7fd2d58207e97, get {url=http://rmgtestingserver/domain/Hospital_Management_System/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\vishw\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65360}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65360/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8c588e6e3059202279d7fd2d58207e97]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8c588e6e3059202279d7fd2d58207e97, get {url=http://rmgtestingserver/domain/Hospital_Management_System/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\vishw\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65360}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65360/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8c588e6e3059202279d7fd2d58207e97
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
+at pgh.hms.generic.genericUtility.BaseClass.setUpBrowser(BaseClass.java:79)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
             <line>
               <![CDATA[Chrome is connected]]>
             </line>
           </reporter-output>
         </test-method> <!-- setUpBrowser -->
-        <test-method is-config="true" signature="loginToApplicationAsAdmin()[pri:0, instance:pgs.hms.test.ReportsPageTest@4681c175]" started-at="2023-07-13T16:19:31 IST" name="loginToApplicationAsAdmin" finished-at="2023-07-13T16:19:31 IST" duration-ms="587" status="PASS">
+        <test-method is-config="true" signature="loginToApplicationAsAdmin()[pri:0, instance:pgs.hms.test.ReportsPageTest@4681c175]" started-at="2023-07-13T17:20:30 IST" name="loginToApplicationAsAdmin" finished-at="2023-07-13T17:20:30 IST" duration-ms="0" status="SKIP">
           <reporter-output>
-            <line>
-              <![CDATA[Logged in as Admin.....]]>
-            </line>
           </reporter-output>
         </test-method> <!-- loginToApplicationAsAdmin -->
-        <test-method signature="reportsTest()[pri:0, instance:pgs.hms.test.ReportsPageTest@4681c175]" started-at="2023-07-13T16:19:31 IST" name="reportsTest" finished-at="2023-07-13T16:19:32 IST" duration-ms="758" status="PASS">
+        <test-method signature="reportsTest()[pri:0, instance:pgs.hms.test.ReportsPageTest@4681c175]" started-at="2023-07-13T17:20:30 IST" name="reportsTest" finished-at="2023-07-13T17:20:30 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8c588e6e3059202279d7fd2d58207e97, get {url=http://rmgtestingserver/domain/Hospital_Management_System/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\vishw\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65360}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65360/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8c588e6e3059202279d7fd2d58207e97]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8c588e6e3059202279d7fd2d58207e97, get {url=http://rmgtestingserver/domain/Hospital_Management_System/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\vishw\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65360}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65360/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8c588e6e3059202279d7fd2d58207e97
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
+at pgh.hms.generic.genericUtility.BaseClass.setUpBrowser(BaseClass.java:79)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
-            <line>
-              <![CDATA[Patient is create  ---> PASS]]>
-            </line>
           </reporter-output>
         </test-method> <!-- reportsTest -->
-        <test-method is-config="true" signature="logoutToApplication()[pri:0, instance:pgs.hms.test.ReportsPageTest@4681c175]" started-at="2023-07-13T16:19:32 IST" name="logoutToApplication" finished-at="2023-07-13T16:19:32 IST" duration-ms="150" status="PASS">
+        <test-method is-config="true" signature="logoutToApplication()[pri:0, instance:pgs.hms.test.ReportsPageTest@4681c175]" started-at="2023-07-13T17:20:30 IST" name="logoutToApplication" finished-at="2023-07-13T17:20:30 IST" duration-ms="0" status="SKIP">
           <reporter-output>
-            <line>
-              <![CDATA[Loggiing out ....]]>
-            </line>
           </reporter-output>
         </test-method> <!-- logoutToApplication -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:pgs.hms.test.ReportsPageTest@4681c175]" started-at="2023-07-13T16:19:32 IST" name="closeBrowser" finished-at="2023-07-13T16:19:33 IST" duration-ms="197" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:pgs.hms.test.ReportsPageTest@4681c175]" started-at="2023-07-13T17:20:30 IST" name="closeBrowser" finished-at="2023-07-13T17:20:30 IST" duration-ms="120" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser is closing...]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="closeDB()[pri:0, instance:pgs.hms.test.ReportsPageTest@4681c175]" started-at="2023-07-13T16:19:33 IST" name="closeDB" finished-at="2023-07-13T16:19:33 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="closeDB()[pri:0, instance:pgs.hms.test.ReportsPageTest@4681c175]" started-at="2023-07-13T17:20:30 IST" name="closeDB" finished-at="2023-07-13T17:20:30 IST" duration-ms="1" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Data base is closing...]]>
