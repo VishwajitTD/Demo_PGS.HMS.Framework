@@ -1,45 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="8" total="10" passed="0" failed="0" skipped="2">
+<testng-results ignored="1" total="1" passed="0" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Data base is connected]]>
     </line>
     <line>
-      <![CDATA[Firefox is connected]]>
-    </line>
-    <line>
-      <![CDATA[Firefox is connected]]>
-    </line>
-    <line>
-      <![CDATA[Browser is closing...]]>
-    </line>
-    <line>
-      <![CDATA[Browser is closing...]]>
-    </line>
-    <line>
       <![CDATA[Data base is closing...]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-07-12T17:22:07 IST" name="Suite" finished-at="2023-07-12T17:22:16 IST" duration-ms="8767">
+  <suite started-at="2023-07-12T17:51:53 IST" name="Default suite" finished-at="2023-07-12T17:51:53 IST" duration-ms="11">
     <groups>
-      <group name="regressionTest">
-        <method signature="PatientTest.integrationBetweenDoctorAndPateintTest()[pri:0, instance:pgs.hms.testScripts.PatientTest@1033576a]" name="integrationBetweenDoctorAndPateintTest" class="pgs.hms.testScripts.PatientTest"/>
-        <method signature="ReportsPageTest.reportsTest()[pri:0, instance:pgs.hms.testScripts.ReportsPageTest@303cf2ba]" name="reportsTest" class="pgs.hms.testScripts.ReportsPageTest"/>
-      </group> <!-- regressionTest -->
-      <group name="smokeTest">
-        <method signature="ReportsPageTest.reportsTest()[pri:0, instance:pgs.hms.testScripts.ReportsPageTest@303cf2ba]" name="reportsTest" class="pgs.hms.testScripts.ReportsPageTest"/>
-      </group> <!-- smokeTest -->
     </groups>
-    <test started-at="2023-07-12T17:22:07 IST" name="Test" finished-at="2023-07-12T17:22:16 IST" duration-ms="8767">
+    <test started-at="2023-07-12T17:51:53 IST" name="Default test" finished-at="2023-07-12T17:51:53 IST" duration-ms="11">
       <class name="pgs.hms.testScripts.AddingDoctorTest">
-        <test-method is-config="true" signature="connectToDB()[pri:0, instance:pgs.hms.testScripts.AddingDoctorTest@183ec003]" started-at="2023-07-12T17:22:06 IST" name="connectToDB" finished-at="2023-07-12T17:22:07 IST" duration-ms="1158" status="PASS">
+        <test-method is-config="true" signature="connectToDB()[pri:0, instance:pgs.hms.testScripts.AddingDoctorTest@231f98ef]" started-at="2023-07-12T17:51:52 IST" name="connectToDB" finished-at="2023-07-12T17:51:53 IST" duration-ms="225" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Data base is connected]]>
             </line>
           </reporter-output>
         </test-method> <!-- connectToDB -->
-        <test-method is-config="true" signature="closeDB()[pri:0, instance:pgs.hms.testScripts.AddingDoctorTest@183ec003]" started-at="2023-07-12T17:22:16 IST" name="closeDB" finished-at="2023-07-12T17:22:16 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="closeDB()[pri:0, instance:pgs.hms.testScripts.AddingDoctorTest@231f98ef]" started-at="2023-07-12T17:51:53 IST" name="closeDB" finished-at="2023-07-12T17:51:53 IST" duration-ms="0" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Data base is closing...]]>
@@ -47,254 +28,6 @@
           </reporter-output>
         </test-method> <!-- closeDB -->
       </class> <!-- pgs.hms.testScripts.AddingDoctorTest -->
-      <class name="pgs.hms.testScripts.ReportsPageTest">
-        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:pgs.hms.testScripts.ReportsPageTest@303cf2ba]" started-at="2023-07-12T17:22:07 IST" name="setUpBrowser" finished-at="2023-07-12T17:22:14 IST" duration-ms="7534" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Reached error page: about:neterror?e=dnsNotFound&u=http%3A//rmgtestingserver/domain/Hospital_Management_System/&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20rmgtestingserver.
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [4bf3f1e4-89ea-4f2c-8322-b544f1c3db2e, get {url=http://rmgtestingserver/domain/Hospital_Management_System/}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.1, moz:accessibilityChecks: false, moz:buildID: 20230608214645, moz:debuggerAddress: 127.0.0.1:6005, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13544, moz:profile: C:\Users\vishw\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:6005/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 4bf3f1e4-89ea-4f2c-8322-b544f1c3db2e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//rmgtestingserver/domain/Hospital_Management_System/&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20rmgtestingserver.
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [4bf3f1e4-89ea-4f2c-8322-b544f1c3db2e, get {url=http://rmgtestingserver/domain/Hospital_Management_System/}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.1, moz:accessibilityChecks: false, moz:buildID: 20230608214645, moz:debuggerAddress: 127.0.0.1:6005, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13544, moz:profile: C:\Users\vishw\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:6005/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 4bf3f1e4-89ea-4f2c-8322-b544f1c3db2e
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
-at pgh.hms.generic.genericUtility.BaseClass.setUpBrowser(BaseClass.java:79)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-            <line>
-              <![CDATA[Firefox is connected]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- setUpBrowser -->
-        <test-method is-config="true" signature="loginToApplicationAsAdmin()[pri:0, instance:pgs.hms.testScripts.ReportsPageTest@303cf2ba]" started-at="2023-07-12T17:22:14 IST" name="loginToApplicationAsAdmin" finished-at="2023-07-12T17:22:14 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToApplicationAsAdmin -->
-        <test-method signature="reportsTest()[pri:0, instance:pgs.hms.testScripts.ReportsPageTest@303cf2ba]" started-at="2023-07-12T17:22:14 IST" name="reportsTest" finished-at="2023-07-12T17:22:14 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Reached error page: about:neterror?e=dnsNotFound&u=http%3A//rmgtestingserver/domain/Hospital_Management_System/&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20rmgtestingserver.
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [4bf3f1e4-89ea-4f2c-8322-b544f1c3db2e, get {url=http://rmgtestingserver/domain/Hospital_Management_System/}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.1, moz:accessibilityChecks: false, moz:buildID: 20230608214645, moz:debuggerAddress: 127.0.0.1:6005, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13544, moz:profile: C:\Users\vishw\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:6005/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 4bf3f1e4-89ea-4f2c-8322-b544f1c3db2e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//rmgtestingserver/domain/Hospital_Management_System/&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20rmgtestingserver.
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [4bf3f1e4-89ea-4f2c-8322-b544f1c3db2e, get {url=http://rmgtestingserver/domain/Hospital_Management_System/}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.1, moz:accessibilityChecks: false, moz:buildID: 20230608214645, moz:debuggerAddress: 127.0.0.1:6005, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13544, moz:profile: C:\Users\vishw\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:6005/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 4bf3f1e4-89ea-4f2c-8322-b544f1c3db2e
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
-at pgh.hms.generic.genericUtility.BaseClass.setUpBrowser(BaseClass.java:79)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- reportsTest -->
-        <test-method is-config="true" signature="logoutToApplication()[pri:0, instance:pgs.hms.testScripts.ReportsPageTest@303cf2ba]" started-at="2023-07-12T17:22:14 IST" name="logoutToApplication" finished-at="2023-07-12T17:22:14 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutToApplication -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:pgs.hms.testScripts.ReportsPageTest@303cf2ba]" started-at="2023-07-12T17:22:14 IST" name="closeBrowser" finished-at="2023-07-12T17:22:16 IST" duration-ms="1091" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Browser is closing...]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- pgs.hms.testScripts.ReportsPageTest -->
-      <class name="pgs.hms.testScripts.PatientTest">
-        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:pgs.hms.testScripts.PatientTest@1033576a]" started-at="2023-07-12T17:22:07 IST" name="setUpBrowser" finished-at="2023-07-12T17:22:14 IST" duration-ms="7534" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Reached error page: about:neterror?e=dnsNotFound&u=http%3A//rmgtestingserver/domain/Hospital_Management_System/&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20rmgtestingserver.
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [a537e141-66e4-419d-a305-81a6a52fe0fa, get {url=http://rmgtestingserver/domain/Hospital_Management_System/}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.1, moz:accessibilityChecks: false, moz:buildID: 20230608214645, moz:debuggerAddress: 127.0.0.1:9786, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9796, moz:profile: C:\Users\vishw\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:9786/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: a537e141-66e4-419d-a305-81a6a52fe0fa]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//rmgtestingserver/domain/Hospital_Management_System/&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20rmgtestingserver.
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [a537e141-66e4-419d-a305-81a6a52fe0fa, get {url=http://rmgtestingserver/domain/Hospital_Management_System/}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.1, moz:accessibilityChecks: false, moz:buildID: 20230608214645, moz:debuggerAddress: 127.0.0.1:9786, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9796, moz:profile: C:\Users\vishw\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:9786/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: a537e141-66e4-419d-a305-81a6a52fe0fa
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
-at pgh.hms.generic.genericUtility.BaseClass.setUpBrowser(BaseClass.java:79)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-            <line>
-              <![CDATA[Firefox is connected]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- setUpBrowser -->
-        <test-method is-config="true" signature="loginToApplicationAsAdmin()[pri:0, instance:pgs.hms.testScripts.PatientTest@1033576a]" started-at="2023-07-12T17:22:14 IST" name="loginToApplicationAsAdmin" finished-at="2023-07-12T17:22:14 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToApplicationAsAdmin -->
-        <test-method signature="integrationBetweenDoctorAndPateintTest()[pri:0, instance:pgs.hms.testScripts.PatientTest@1033576a]" started-at="2023-07-12T17:22:14 IST" name="integrationBetweenDoctorAndPateintTest" finished-at="2023-07-12T17:22:14 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Reached error page: about:neterror?e=dnsNotFound&u=http%3A//rmgtestingserver/domain/Hospital_Management_System/&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20rmgtestingserver.
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [a537e141-66e4-419d-a305-81a6a52fe0fa, get {url=http://rmgtestingserver/domain/Hospital_Management_System/}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.1, moz:accessibilityChecks: false, moz:buildID: 20230608214645, moz:debuggerAddress: 127.0.0.1:9786, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9796, moz:profile: C:\Users\vishw\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:9786/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: a537e141-66e4-419d-a305-81a6a52fe0fa]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//rmgtestingserver/domain/Hospital_Management_System/&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20rmgtestingserver.
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [a537e141-66e4-419d-a305-81a6a52fe0fa, get {url=http://rmgtestingserver/domain/Hospital_Management_System/}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.1, moz:accessibilityChecks: false, moz:buildID: 20230608214645, moz:debuggerAddress: 127.0.0.1:9786, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9796, moz:profile: C:\Users\vishw\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:9786/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: a537e141-66e4-419d-a305-81a6a52fe0fa
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
-at pgh.hms.generic.genericUtility.BaseClass.setUpBrowser(BaseClass.java:79)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- integrationBetweenDoctorAndPateintTest -->
-        <test-method is-config="true" signature="logoutToApplication()[pri:0, instance:pgs.hms.testScripts.PatientTest@1033576a]" started-at="2023-07-12T17:22:14 IST" name="logoutToApplication" finished-at="2023-07-12T17:22:14 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutToApplication -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:pgs.hms.testScripts.PatientTest@1033576a]" started-at="2023-07-12T17:22:14 IST" name="closeBrowser" finished-at="2023-07-12T17:22:16 IST" duration-ms="1165" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Browser is closing...]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- pgs.hms.testScripts.PatientTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

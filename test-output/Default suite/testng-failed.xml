@@ -3,19 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pgs.hms.testScripts.AddingDoctorTest">
+      <class name="pgs.hms.testScripts.PatientTest">
         <methods>
-          <include name="loginToApplicationasAsDoctor"/>
           <include name="loginToApplicationAsAdmin"/>
+          <include name="loginToApplicationasAsDoctor"/>
           <include name="connectToDB"/>
           <include name="closeBrowser"/>
           <include name="closeDB"/>
-          <include name="addingDoctorsAndSearchPatientsTest" invocation-numbers="0 1 2 3 4 5 6"/>
-          <include name="logoutToApplication"/>
+          <include name="integrationBetweenDoctorAndPateintTest"/>
           <include name="setUpBrowser"/>
+          <include name="logoutToApplication"/>
           <include name="loginToApplicationasAsPatient"/>
         </methods>
-      </class> <!-- pgs.hms.testScripts.AddingDoctorTest -->
+      </class> <!-- pgs.hms.testScripts.PatientTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
