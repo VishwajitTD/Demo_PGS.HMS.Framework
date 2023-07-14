@@ -6,7 +6,7 @@ public class SampleTest {
 
 	@Test
 	public void sampleTest() {
-		System.out.println("Jenkind is not running");
+		System.out.println("Sample for Jenkings");
 	}
 	
 }
