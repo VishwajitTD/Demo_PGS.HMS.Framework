@@ -2,12 +2,17 @@ package pgh.hms.generic.genericUtility;
 
 import java.awt.AWTException;
 import java.awt.Robot;
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -297,5 +302,25 @@ public class WebActionUtility {
             e.printStackTrace();
         }
     }
+    /**
+     * This method will take the failed screenshot
+     * @param driver
+     * @param screenshotname
+     * @return
+     * @throws IOException
+     */
 
+    public String screenshot(WebDriver driver,String screenshotname) throws IOException
+    {
+    	TakesScreenshot shot=(TakesScreenshot)driver;
+    	File scr = shot.getScreenshotAs(OutputType.FILE);
+    	File dst=new File(".\\sceenshot\\"+screenshotname+".png");
+    	FileUtils.copyFile(scr, dst);
+    	return dst.getAbsolutePath();
+   
+    	
+    }
+    
+    
+    
 }

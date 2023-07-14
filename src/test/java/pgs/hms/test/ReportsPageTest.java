@@ -48,6 +48,7 @@ public class ReportsPageTest extends BaseClass {
 
 		// submit
 		reportsPage.submit();
+		Assert.fail();
 		
 	
 		// Perform additional actions on To Date input if needed

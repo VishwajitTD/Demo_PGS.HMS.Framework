@@ -3,7 +3,8 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="pgs.hms.testScripts.ReportsPageTest"/>
+      <class name="pgs.hms.test.SampleTest"/>
+      <class name="pgs.hms.test.ReportsPageTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
